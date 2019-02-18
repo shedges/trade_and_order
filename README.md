@@ -42,7 +42,7 @@ A,100007,B,3,1000     <<< Invalid Entry
 # Output
 
 $>./orderbook message.txt                                                                                                            
-============================
+
 printing order book
 ============================
 Generated Order ID 100008 to BUY 3 quantity at price 1050
@@ -58,7 +58,7 @@ Trade occured at price 1025 with total quantity 2
 
 Trade occured at price 1025 with total quantity 3
 
-============================
+
 printing order book
 ============================
 Generated Order ID 100007 to SELL 4 quantity at price 1025
