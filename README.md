@@ -4,71 +4,71 @@ This is a general trade and order book example to get current state of the order
 
 # How to compile
 
-Clean all .o and executable
-$> make cleanall
+Clean all .o and executable<br />
+$> make cleanall<br />
 
-Compile program and create executable
-$> make
+Compile program and create executable<br />
+$> make<br />
 
 # Usage
-$> ./orderbook
-Usage :
-./orderbook message_file_name
-message_file_name - file name containing sequence of messages. Each message should be on separate line
+$> ./orderbook<br />
+Usage :<br />
+./orderbook message_file_name<br />
+message_file_name - file name containing sequence of messages. Each message should be on separate line<br />
 
-# Example
+# Example<br />
 
-Input file 
-$> cat message.txt
+# Input file <br />
+$> cat message.txt<br />
 
-A,100000,S,1,1075
-A,100001,B,9,1000
-A,100002,B,30,975
-A,100003,S,10,1050
-A,100004,B,10,950
-A,100005,S,2,1025
-A,100006,B,1,1000
-X,100004,B,10,950
-A,100007,S,5,1025
-A,100008,B,3,1050
-T,2,1025
-T,1,1025
-X,100008,B,3,1050
-X,100005,S,2,1025
-M,100007,S,4,1025
-A,100007,S,3,1000     <<< Invalid Entry
-A,100007,B,3,1000     <<< Invalid Entry
+A,100000,S,1,1075<br />
+A,100001,B,9,1000<br />
+A,100002,B,30,975<br />
+A,100003,S,10,1050<br />
+A,100004,B,10,950<br />
+A,100005,S,2,1025<br />
+A,100006,B,1,1000<br />
+X,100004,B,10,950<br />
+A,100007,S,5,1025<br />
+A,100008,B,3,1050<br />
+T,2,1025<br />
+T,1,1025<br />
+X,100008,B,3,1050<br />
+X,100005,S,2,1025<br />
+M,100007,S,4,1025<br />
+A,100007,S,3,1000     <<< Invalid Entry<br />
+A,100007,B,3,1000     <<< Invalid Entry<br />
 
 # Output
 
-$>./orderbook message.txt                                                                                                            
-
-printing order book
-============================
-Generated Order ID 100008 to BUY 3 quantity at price 1050
-Generated Order ID 100007 to SELL 5 quantity at price 1025
-Generated Order ID 100006 to BUY 1 quantity at price 1000
-Generated Order ID 100005 to SELL 2 quantity at price 1025
-Generated Order ID 100003 to SELL 10 quantity at price 1050
-Generated Order ID 100002 to BUY 30 quantity at price 975
-Generated Order ID 100001 to BUY 9 quantity at price 1000
-Generated Order ID 100000 to SELL 1 quantity at price 1075
-
-Trade occured at price 1025 with total quantity 2
-
-Trade occured at price 1025 with total quantity 3
-
-
-printing order book
-============================
-Generated Order ID 100007 to SELL 4 quantity at price 1025
-Generated Order ID 100006 to BUY 1 quantity at price 1000
-Generated Order ID 100003 to SELL 10 quantity at price 1050
-Generated Order ID 100002 to BUY 30 quantity at price 975
-Generated Order ID 100001 to BUY 9 quantity at price 1000
-Generated Order ID 100000 to SELL 1 quantity at price 1075
-
-Trade Stats : corrupted message count - 0 invalid message count - 0
-
-Order Stats : corrupted message count - 0, Duplicate message count - 2, Invalid entry count - 0
-
+$>./orderbook message.txt         <br />                                                                                                   
+============================<br />
+printing order book<br />
+============================<br />
+Generated Order ID 100008 to BUY 3 quantity at price 1050<br />
+Generated Order ID 100007 to SELL 5 quantity at price 1025<br />
+Generated Order ID 100006 to BUY 1 quantity at price 1000<br />
+Generated Order ID 100005 to SELL 2 quantity at price 1025<br />
+Generated Order ID 100003 to SELL 10 quantity at price 1050<br />
+Generated Order ID 100002 to BUY 30 quantity at price 975<br />
+Generated Order ID 100001 to BUY 9 quantity at price 1000<br />
+Generated Order ID 100000 to SELL 1 quantity at price 1075<br />
+<br />
+Trade occured at price 1025 with total quantity 2<br />
+<br />
+Trade occured at price 1025 with total quantity 3<br />
+<br />
+============================<br />
+printing order book<br />
+============================<br />
+Generated Order ID 100007 to SELL 4 quantity at price 1025<br />
+Generated Order ID 100006 to BUY 1 quantity at price 1000<br />
+Generated Order ID 100003 to SELL 10 quantity at price 1050<br />
+Generated Order ID 100002 to BUY 30 quantity at price 975<br />
+Generated Order ID 100001 to BUY 9 quantity at price 1000<br />
+Generated Order ID 100000 to SELL 1 quantity at price 1075<br />
+<br />
+Trade Stats : corrupted message count - 0 invalid message count - 0<br />
+<br />
+Order Stats : corrupted message count - 0, Duplicate message count - 2, Invalid entry count - 0<br />
+<br />
