@@ -4,6 +4,9 @@ This is a general trade and order book example to get current state of the order
 
 # How to compile
 
+Go to src directory <br />
+$> cd src<br />
+
 Clean all .o and executable<br />
 $> make cleanall<br />
 
