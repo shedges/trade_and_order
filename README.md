@@ -12,10 +12,16 @@ $> make<br />
 
 # Usage
 $> ./orderbook<br />
-Usage :<br />
+Usage : <br />
 ./orderbook message_file_name<br />
 message_file_name - file name containing sequence of messages. Each message should be on separate line<br />
 
+# Input assumption<br />
+Order and trade sequence will be received from file. <br />
+Each message will be independent of other and parsed indivisually. Order book will be updated on every message.<br />
+System integrity and automicity will be maintain by messages. This program will manage order book based on messages.<br />
+Praogram will not modify ordr book on invalid entry. It will use stats to maintain invalid/corrupted messages.<br />
+<br />
 # Example<br />
 
 # Input file <br />
